@@ -1,0 +1,17 @@
+  public static void main(String[] args) {
+        soma();
+    }
+
+    public static void soma() {
+
+        int[] t = new int[]{1, 3, 8, 6, 7};
+        int[] copia = t.clone();
+
+        System.out.print("Copia: ");
+        for (int i = 0; i < t.length; i++) {
+            System.out.println( copia[i]);
+        }
+
+    }
+
+}
