@@ -1,0 +1,30 @@
+public static void Remocao(){
+        Scanner a = new Scanner(System.in);
+    System.out.println("quantidade de elementos: ");
+    int n = a.nextInt();
+    int[] vetor = new int [n];
+    System.out.println("digite os elemetos do vetor: ");
+    for (int i = 0; i < n; i++) {
+  
+      vetor[i] = a.nextInt();
+    }
+    System.out.println("digite o valor a ser removido");
+    int valorRemovedor = a.nextInt();
+    
+    ArrayList<Integer> novoVetor = new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+        if(vetor[i] != valorRemovedor){
+            novoVetor.add(vetor[i]);
+                }
+    System.out.println("vetor resultado apos remocao: ");
+    for (int num : novoVetor) {
+        System.out.println(num +"");
+    }
+    a.close();
+        }
+    }
+public static void main(String[] args) {
+      Remocao();
+    }
+    
+}
