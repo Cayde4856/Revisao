@@ -1,0 +1,23 @@
+public static void Busca() {
+        Scanner l = new Scanner(System.in);
+        System.out.println("Quantidae de elementos:  ");
+        int t = l.nextInt();
+        int[] v = new int [t];
+        
+        System.out.println("Elementos:  ");
+        for (int i = 0;i < v.length;i++){
+            v[i] = l.nextInt();
+        }
+        
+        System.out.println("Elemento procurado:   ");
+        
+        int b = l.nextInt();
+        b = Arrays.binarySearch(v,b);
+        System.out.println("Posição do elemento buscado = " + b);
+    }
+
+    public static void main(String[] args) {
+        Busca();
+    }
+
+}
