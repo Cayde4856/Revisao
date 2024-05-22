@@ -1,0 +1,26 @@
+  public static void par() {
+   
+     Scanner a = new Scanner(System.in);
+        System.out.println("quantidade de elementos: ");
+        int n = a.nextInt();
+        int[] vetor = new int[n];
+        int p = 0;
+        int im = 0;
+        System.out.println("digite os elementos do vetor: ");
+        for (int i = 0; i < n; i++) {
+            vetor[i] = a.nextInt();
+            if(vetor[i] % 2 == 0){
+                p++;
+            }else {
+                im++;
+            }         
+        }
+        System.out.println("quantidade de pares: " + p);
+        System.out.println("quantidade de impares" + im);
+        a.close();
+    }
+public static void main(String[] args) {
+    par();
+    }
+    
+}
